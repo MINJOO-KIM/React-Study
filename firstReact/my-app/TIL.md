@@ -2,6 +2,7 @@
 
 - [JSX](#JSX)
 - [Element](#Element)
+- [Componenet와 Props](#component와-props)
 
 ### JSX
 
@@ -40,3 +41,33 @@
     - 함수가 호출될 때마다 기존 엘리먼트를 변경하는 것이 아니라 새로운 엘리먼트를 생성해서 바꿔치기!
 
 ### Component와 Props
+
+- 컴포넌트들이 모여서 페이지를 구성한다.(항상 대문자로 시작!)
+- 입력: props / 출력: 리액트 element
+- Props
+  - 리액트 컴포넌트(붕어빵 틀) 의 속성 (붕어빵 재료)
+  - 읽기 전용!! 값을 변경할 수 없다. (Read-only) 그러면....?
+    - 새로운 값을 컴포넌트에 전달하여 새로 element를 생성하면 된다!
+  - JSX: {}에 간단하게 props를 넣어줄 수 있다.
+- Component 종류
+
+  - 함수 컴포넌트
+    ![alt text](image-4.png) - 리액트의 컴포넌트는 일종의 함수!
+
+  - 클래스 컴포넌트
+    ![alt text](image-5.png) - React.Component를 상속받아서 만들어!
+
+- 컴포넌트 렌더링하기
+  - 먼저, 컴포넌트로부터 엘리먼트를 만든다.
+  - 그 엘리먼트를 렌더링한다.
+    ![alt text](image-6.png)
+- 컴포넌트 합성과 추출
+    - 합성: 여러개의 컴포넌트로 새로운 컴포넌트를 만드는 것 
+    - 추출: 복잡한 컴포넌트를 쪼개서 여러 개의 컴포넌트로 나누는 것 (재사용성)
+    - 예제
+        - Avatar, UserInfo 컴포넌트를 추출하여 Comment 컴포넌트에 반영하기
+        ![alt text](image-7.png)
+        ![alt text](image-8.png)
+        ![alt text](image-9.png)
+
+

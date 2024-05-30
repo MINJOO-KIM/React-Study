@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 import Clock from "./chp04/Clock";
+import CommentList from "./chp05/CommentList";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
