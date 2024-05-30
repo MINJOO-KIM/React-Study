@@ -1,3 +1,8 @@
+### Contents
+
+- [JSX](#JSX)
+- [Element](#Element)
+
 ### JSX
 
 - JavaScript와 XML/HTML 코드가 결합된 형태
@@ -29,8 +34,9 @@
   - 루트 div에 React Element 렌더링하기
     - ![alt text](image-1.png)
     - ![alt text](image-2.png)
-      > **React Element와 DOM Element의 차이**
-      > <br/>React 엘리먼트는 React의 Virtual DOM에 존재하는 것이고 DOM 엘리먼트는 실제 브라우저의 DOM에 존재!
+      > **React Element와 DOM Element의 차이** > <br/>React 엘리먼트는 React의 Virtual DOM에 존재하는 것이고 DOM 엘리먼트는 실제 브라우저의 DOM에 존재!
   - 렌더링된 Elements를 업데이트 하기
     - ![alt text](image-3.png)
     - 함수가 호출될 때마다 기존 엘리먼트를 변경하는 것이 아니라 새로운 엘리먼트를 생성해서 바꿔치기!
+
+### Component와 Props
