@@ -6,11 +6,12 @@ import reportWebVitals from "./reportWebVitals";
 
 import Clock from "./chp04/Clock";
 import CommentList from "./chp05/CommentList";
+import NotificationList from "./chp06/NotificationList";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Clock />
+    <NotificationList />
   </React.StrictMode>
 );
 

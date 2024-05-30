@@ -3,6 +3,7 @@
 - [JSX](#JSX)
 - [Element](#Element)
 - [Componenet와 Props](#component와-props)
+- [State와 Lifecycle](#state와-lifecycle)
 
 ### JSX
 
@@ -62,12 +63,20 @@
   - 그 엘리먼트를 렌더링한다.
     ![alt text](image-6.png)
 - 컴포넌트 합성과 추출
-    - 합성: 여러개의 컴포넌트로 새로운 컴포넌트를 만드는 것 
-    - 추출: 복잡한 컴포넌트를 쪼개서 여러 개의 컴포넌트로 나누는 것 (재사용성)
-    - 예제
-        - Avatar, UserInfo 컴포넌트를 추출하여 Comment 컴포넌트에 반영하기
-        ![alt text](image-7.png)
-        ![alt text](image-8.png)
-        ![alt text](image-9.png)
+  - 합성: 여러개의 컴포넌트로 새로운 컴포넌트를 만드는 것
+  - 추출: 복잡한 컴포넌트를 쪼개서 여러 개의 컴포넌트로 나누는 것 (재사용성)
+  - 예제
+    - Avatar, UserInfo 컴포넌트를 추출하여 Comment 컴포넌트에 반영하기
+      ![alt text](image-7.png)
+      ![alt text](image-8.png)
+      ![alt text](image-9.png)
 
+### State와 Lifecycle
 
+- state: React 컴포넌트의 상태
+  - 렌더링이나 데이터 흐름에 사용되는 값만 state에 포함시키자.
+  - 단, state를 직접 수정하지 않는다.
+    (클래스 컴포넌트에서는 setState로 상태를 업데이트)
+- React 클래스 컴포넌트의 생명주기
+  ![alt text](image-10.png)
+  - 컴포넌트는 계속 존재하는 것이 아니라 시간의 흐름에 따라 생성되고 업데이트 되다가 사라진다.
